@@ -1,8 +1,3 @@
-```txt
-npm install
-npm run dev
-```
-
-```txt
-npm run deploy
+```bash
+npx giget@latest gh:yusukebe/hono-vite-react-stack-example my-app
 ```
