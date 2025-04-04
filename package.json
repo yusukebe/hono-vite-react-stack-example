@@ -1,0 +1,25 @@
+{
+  "name": "hono-vite-react-stack-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr",
+    "preview": "wrangler dev dist-server/index.js",
+    "deploy": "$npm_execpath run build && wrangler deploy dist-server/index.js"
+  },
+  "dependencies": {
+    "@hono/react-renderer": "^0.3.0",
+    "hono": "^4.7.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "hono-vite-react-stack": "^0.1.1",
+    "vite": "^6.2.5",
+    "wrangler": "^4.7.0"
+  }
+}
