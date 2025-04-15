@@ -6,7 +6,7 @@ import type { AppType } from '../server/api'
 const client = hc<AppType>('/api')
 
 const fetchData = async () => {
-  const data = await client.index.$get({query: { name: 'Hono' }})
+  const data = await client.index.$get({ query: { name: 'Hono' } })
   return data.json()
 }
 

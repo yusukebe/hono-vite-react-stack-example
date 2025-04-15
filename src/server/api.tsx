@@ -9,7 +9,7 @@ const routes = app.get(
   zValidator(
     'query',
     z.object({
-      name: z.string().optional(),
+      name: z.string().optional()
     })
   ),
   (c) => {
