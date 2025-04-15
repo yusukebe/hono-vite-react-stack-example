@@ -1,5 +1,6 @@
 import { use, Suspense } from 'react'
-import { hc, InferResponseType } from 'hono/client'
+import { hc } from 'hono/client'
+import type { InferResponseType } from 'hono/client'
 import type { AppType } from '../server/api'
 
 const client = hc<AppType>('/api')
